@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ARENA 90: portal esportivo com futebol, basquete, Fórmula 1 e notícias com fontes.">
+
+    <title>ARENA 90 | Portal Esportivo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================
+         1. CABEÇALHO
+    ======================================= -->
+    <header class="cabecalho">
+
+        <h1 class="cabecalho__titulo">
+            ARENA 90
+        </h1>
+
+        <p class="cabecalho__slogan">
+            O esporte não para.
+        </p>
+
+    </header>
+
+
+    <!-- ======================================
+         2. MENU DE NAVEGAÇÃO
+    ======================================= -->
+    <nav class="menu" aria-label="Navegação principal">
+
+        <a class="menu__link" href="index.html">
+            Início
+        </a>
+
+        <a class="menu__link" href="futebol.html">
+            Futebol
+        </a>
+
+        <a class="menu__link" href="basquete.html">
+            Basquete
+        </a>
+
+        <a class="menu__link" href="formula1.html">
+            Fórmula 1
+        </a>
+
+        <a class="menu__link" href="noticias.html">
+            Notícias do Dia
+        </a>
+
+        <a class="menu__link" href="sobre.html">
+            Sobre
+        </a>
+
+    </nav>
+
+
+    <!-- ======================================
+         3. CONTEÚDO PRINCIPAL
+    ======================================= -->
+    <main>
+
+        <!-- SEÇÃO 1: EXPLORAR MODALIDADES -->
+        <section class="noticias">
+
+            <h2 class="noticias__titulo">
+                Explore o universo esportivo
+            </h2>
+
+            <p class="noticias__descricao">
+                Escolha sua modalidade favorita
+                e explore o conteúdo do ARENA 90.
+            </p>
+
+
+            <!-- GRID DE MODALIDADES -->
+            <div class="noticias__grade">
+
+                <!-- CARTÃO 1: FUTEBOL -->
+                <article class="noticia noticia--destaque">
+
+                    <a class="noticia__link"
+                       href="futebol.html">
+
+                        <img
+                            class="noticia__imagem"
+                            src="img/futebol-brasileiro.jpg"
+                            alt="Interior da Arena Corinthians"
+                        >
+
+                        <span class="noticia__categoria">
+                            Futebol
+                        </span>
+
+                        <h3 class="noticia__titulo">
+                            O universo do futebol
+                        </h3>
+
+                        <p class="noticia__descricao">
+                            Explore clubes, jogadores,
+                            competições nacionais e
+                            internacionais.
+                        </p>
+
+                        <span class="noticia__acao">
+                            Explorar Futebol
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <!-- CARTÃO 2: BASQUETE -->
+                <article class="noticia">
+
+                    <a class="noticia__link"
+                       href="basquete.html">
+
+                        <img
+                            class="noticia__imagem"
+                            src="img/nba.jpg"
+                            alt="Partida de basquete em uma quadra profissional"
+                        >
+
+                        <span class="noticia__categoria">
+                            Basquete
+                        </span>
+
+                        <h3 class="noticia__titulo">
+                            O mundo do basquete
+                        </h3>
+
+                        <p class="noticia__descricao">
+                            Conheça a NBA, as equipes,
+                            os grandes jogadores
+                            e a história das quadras.
+                        </p>
+
+                        <span class="noticia__acao">
+                            Explorar Basquete
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <!-- CARTÃO 3: FÓRMULA 1 -->
+                <article class="noticia">
+
+                    <a class="noticia__link"
+                       href="formula1.html">
+
+                        <img
+                            class="noticia__imagem"
+                            src="img/formula1.jpg"
+                            alt="Circuito de Fórmula 1"
+                        >
+
+                        <span class="noticia__categoria">
+                            Fórmula 1
+                        </span>
+
+                        <h3 class="noticia__titulo">
+                            Velocidade e tecnologia
+                        </h3>
+
+                        <p class="noticia__descricao">
+                            Descubra pilotos, escuderias,
+                            circuitos e a classificação
+                            atualizada pela API.
+                        </p>
+
+                        <span class="noticia__acao">
+                            Explorar Fórmula 1
+                        </span>
+
+                    </a>
+
+                </article>
+
+            </div>
+            <!-- FIM DO GRID -->
+
+        </section>
+
+
+        <!-- ======================================
+             SEÇÃO 2: NOTÍCIAS DO DIA
+        ======================================= -->
+        <section class="inicio__noticias">
+
+            <h2 class="inicio__titulo">
+                📰 Notícias do Dia
+            </h2>
+
+            <p class="inicio__descricao">
+                Confira nossa seleção de notícias
+                de futebol, basquete e Fórmula 1,
+                com datas de publicação e fontes
+                para leitura completa.
+            </p>
+
+            <a class="inicio__botao"
+               href="noticias.html">
+                Acessar notícias
+            </a>
+
+        </section>
+
+
+        <!-- ======================================
+             SEÇÃO 3: RECURSOS DO PORTAL
+        ======================================= -->
+        <section class="modalidades">
+
+            <h2 class="modalidades__titulo">
+                O que você encontra no ARENA 90
+            </h2>
+
+            <!-- Lista com Flexbox -->
+            <ul class="modalidades__lista">
+
+                <li class="modalidades__item">
+                    📰 Notícias com fontes
+                </li>
+
+                <li class="modalidades__item">
+                    🏎️ Dados de Fórmula 1 por API
+                </li>
+
+                <li class="modalidades__item">
+                    📱 Navegação responsiva
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================
+         4. RODAPÉ
+    ======================================= -->
+    <footer class="rodape">
+
+        <p class="rodape__texto">
+            © 2026 ARENA 90 - Portal Esportivo
+        </p>
+
+        <p class="rodape__credito">
+            Projeto acadêmico de Web Coding
+        </p>
+
+    </footer>
+
+</body>
+</html>

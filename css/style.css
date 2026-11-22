@@ -1,0 +1,581 @@
+
+/* =========================================
+   ARENA 90 - PORTAL ESPORTIVO
+   Arquivo principal de estilos
+========================================= */
+
+
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1220;
+    color: #F1F5F9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* =========================================
+   2. CABEÇALHO - FLEXBOX
+========================================= */
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #182438;
+    padding: 30px;
+}
+
+/* Título do portal */
+.cabecalho__titulo {
+    color: #22C55E;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Slogan */
+.cabecalho__slogan {
+    color: #F1F5F9;
+    margin: 0;
+}
+
+
+/* =========================================
+   3. MENU PRINCIPAL - FLEXBOX
+========================================= */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    background-color: #111827;
+    padding: 20px;
+}
+
+/* Links do menu */
+.menu__link {
+    color: #F1F5F9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito com o mouse */
+.menu__link:hover {
+    color: #22C55E;
+}
+
+/* Acessibilidade: foco pelo teclado */
+.menu__link:focus-visible {
+    outline: 3px solid #22C55E;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   4. CONTEÚDO PRINCIPAL
+========================================= */
+
+main {
+    background-color: #0B1220;
+    color: #F1F5F9;
+    padding: 30px;
+}
+
+
+/* =========================================
+   5. SEÇÃO DE NOTÍCIAS
+========================================= */
+
+/* Título da seção */
+.noticias__titulo {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Descrição da seção */
+.noticias__descricao {
+    color: #CBD5E1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   6. PRIMEIRO CSS GRID - NOTÍCIAS
+========================================= */
+
+.noticias__grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================================
+   7. CARTÕES DE NOTÍCIAS - BEM
+========================================= */
+
+/* Bloco principal */
+.noticia {
+    background-color: #182438;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Modificador BEM: notícia em destaque */
+.noticia--destaque {
+    border: 2px solid #22C55E;
+}
+
+/* Categoria esportiva */
+.noticia__categoria {
+    color: #22C55E;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Título da notícia */
+.noticia__titulo {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* Descrição da notícia */
+.noticia__descricao {
+    color: #CBD5E1;
+    font-size: 15px;
+}
+
+/* Imagem da notícia */
+.noticia__imagem {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Animação ao passar o mouse */
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   8. PÁGINA SOBRE - APRESENTAÇÃO
+========================================= */
+
+.sobre {
+    background-color: #182438;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Título da apresentação */
+.sobre__titulo {
+    color: #22C55E;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos da apresentação */
+.sobre__descricao {
+    color: #CBD5E1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   9. PÁGINA SOBRE - INFORMAÇÕES
+========================================= */
+
+.informacoes {
+    margin-bottom: 30px;
+}
+
+/* Título da seção */
+.informacoes__titulo {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   10. SEGUNDO CSS GRID - INFORMAÇÕES
+========================================= */
+
+.informacoes__grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* Cartões informativos */
+
+/* Cartões informativos */
+.informacoes__cartao {
+    background-color: #182438;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Posicionamento explícito no segundo Grid */
+
+/* Posicionamento explícito no segundo Grid */
+@media screen and (min-width: 601px) {
+
+    .informacoes__cartao:first-child,
+    .informacoes__cartao:last-child {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* Títulos dos cartões */
+
+
+/* Títulos dos cartões */
+
+
+/* Descrições dos cartões */
+.informacoes__cartao p {
+    color: #CBD5E1;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MODALIDADES ESPORTIVAS - FLEXBOX
+========================================= */
+
+.modalidades {
+    margin-bottom: 30px;
+}
+
+.modalidades__titulo {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Lista com Flexbox */
+.modalidades__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens da lista */
+.modalidades__item {
+    background-color: #182438;
+    color: #F1F5F9;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* =========================================
+   11. RODAPÉ - FLEXBOX
+========================================= */
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #182438;
+    padding: 20px 30px;
+}
+
+/* Textos do rodapé */
+.rodape__texto,
+.rodape__credito {
+    color: #CBD5E1;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================
+   CLASSIFICAÇÃO DE PILOTOS - API
+========================================= */
+
+.classificacao {
+    margin-top: 40px;
+}
+
+.classificacao__titulo {
+    color: #22C55E;
+    font-size: 26px;
+}
+
+.classificacao__descricao {
+    color: #CBD5E1;
+    margin-bottom: 20px;
+}
+
+.classificacao__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.classificacao__piloto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    background-color: #182438;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.classificacao__posicao {
+    color: #22C55E;
+    font-weight: bold;
+}
+
+.classificacao__pontos {
+    color: #F1F5F9;
+    font-weight: bold;
+}
+
+
+
+
+/* =========================================
+   PÁGINA INICIAL - CARTÕES INTERATIVOS
+========================================= */
+
+/* Link ocupa toda a área interna do cartão */
+.noticia__link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Destaque ao passar o mouse */
+.noticia__link:hover .noticia__acao {
+    text-decoration: underline;
+}
+
+/* Destaque ao navegar com Tab */
+.noticia__link:focus-visible {
+    outline: 3px solid #22C55E;
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+
+/* Indicação da ação */
+.noticia__acao {
+    display: inline-block;
+    color: #22C55E;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   PÁGINA INICIAL - NOTÍCIAS DO DIA
+========================================= */
+
+.inicio__noticias {
+    background-color: #182438;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border-left: 4px solid #22C55E;
+}
+
+.inicio__titulo {
+    color: #22C55E;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.inicio__descricao {
+    color: #CBD5E1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.inicio__botao {
+    display: inline-block;
+    background-color: #22C55E;
+    color: #0B1220;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.inicio__botao:hover {
+    background-color: #4ADE80;
+}
+
+.inicio__botao:focus-visible {
+    outline: 3px solid #F1F5F9;
+    outline-offset: 4px;
+}
+
+
+
+/* Fonte das matérias esportivas */
+.noticia__fonte {
+    color: #94A3B8;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+/* Links externos das notícias */
+a.noticia__acao {
+    text-decoration: none;
+}
+
+a.noticia__acao:hover {
+    text-decoration: underline;
+}
+
+a.noticia__acao:focus-visible {
+    outline: 3px solid #22C55E;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+
+/* =========================================
+   12. RESPONSIVIDADE - CELULARES
+   Até 600px
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Notícias em uma coluna */
+    .noticias__grade {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menu mais compacto */
+    .menu {
+        gap: 12px;
+        padding: 15px;
+    }
+
+    /* Título menor */
+    .cabecalho__titulo {
+        font-size: 28px;
+    }
+
+    /* Rodapé vertical */
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Informações em uma coluna */
+    .informacoes__grade {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   13. RESPONSIVIDADE - TABLETS
+   De 601px até 1024px
+========================================= */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Notícias em duas colunas */
+    .noticias__grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Espaçamento do menu */
+    .menu {
+        gap: 18px;
+    }
+
+    /* Conteúdo principal */
+    main {
+        padding: 20px;
+    }
+
+    /* Imagens */
+    .noticia__imagem {
+        height: 180px;
+    }
+
+}
+
+
+/* =========================================
+   14. RESPONSIVIDADE - COMPUTADORES
+   A partir de 1025px
+========================================= */
+
+@media screen and (min-width: 1025px) {
+
+    /* Notícias em três colunas */
+    .noticias__grade {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* Limitação da largura do conteúdo */
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Altura das imagens */
+    .noticia__imagem {
+        height: 170px;
+    }
+
+}

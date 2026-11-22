@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Conheça o ARENA 90, um portal esportivo desenvolvido com HTML5, CSS3, JavaScript e integração com API.">
+
+    <title>Sobre | ARENA 90</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================
+         1. CABEÇALHO
+    ======================================= -->
+    <header class="cabecalho">
+
+        <h1 class="cabecalho__titulo">
+            ARENA 90
+        </h1>
+
+        <p class="cabecalho__slogan">
+            O esporte não para.
+        </p>
+
+    </header>
+
+
+    <!-- ======================================
+         2. MENU DE NAVEGAÇÃO
+    ======================================= -->
+    <nav class="menu" aria-label="Navegação principal">
+
+        <a class="menu__link" href="index.html">
+            Início
+        </a>
+
+        <a class="menu__link" href="futebol.html">
+            Futebol
+        </a>
+
+        <a class="menu__link" href="basquete.html">
+            Basquete
+        </a>
+
+        <a class="menu__link" href="formula1.html">
+            Fórmula 1
+        </a>
+
+        <a class="menu__link" href="noticias.html">
+            Notícias do Dia
+        </a>
+
+        <a class="menu__link" href="sobre.html">
+            Sobre
+        </a>
+
+    </nav>
+
+
+    <!-- ======================================
+         3. CONTEÚDO PRINCIPAL
+    ======================================= -->
+    <main>
+
+        <!-- SEÇÃO 1: APRESENTAÇÃO -->
+        <section class="sobre">
+
+            <h2 class="sobre__titulo">
+                Sobre o ARENA 90
+            </h2>
+
+            <p class="sobre__descricao">
+                O ARENA 90 é um portal esportivo
+                desenvolvido para reunir conteúdos
+                sobre futebol, basquete e Fórmula 1
+                em um ambiente organizado,
+                acessível e responsivo.
+            </p>
+
+            <p class="sobre__descricao">
+                O portal oferece matérias temáticas,
+                notícias com fontes identificadas
+                e links para leitura aprofundada.
+                Também apresenta uma classificação
+                de pilotos da Fórmula 1 obtida
+                através de uma API externa.
+            </p>
+
+            <p class="sobre__descricao">
+                Nosso objetivo é combinar informação
+                esportiva, navegação intuitiva
+                e tecnologias de desenvolvimento web
+                em um projeto acadêmico funcional.
+            </p>
+
+        </section>
+
+
+        <!-- ======================================
+             SEÇÃO 2: INFORMAÇÕES DO PORTAL
+        ======================================= -->
+        <section class="informacoes">
+
+            <h2 class="informacoes__titulo">
+                Conheça nosso portal
+            </h2>
+
+            <!-- SEGUNDO CSS GRID -->
+            <div class="informacoes__grade">
+
+                <!-- CARTÃO 1: NOSSA MISSÃO -->
+                <article class="informacoes__cartao">
+
+                    <h3>Nossa Missão</h3>
+
+                    <p>
+                        Facilitar o acesso a conteúdos
+                        esportivos, permitindo que
+                        o visitante explore matérias,
+                        conheça diferentes modalidades
+                        e consulte fontes originais.
+                    </p>
+
+                </article>
+
+
+                <!-- CARTÃO 2: CONTEÚDOS -->
+                <article class="informacoes__cartao">
+
+                    <h3>Conteúdo Esportivo</h3>
+
+                    <p>
+                        O ARENA 90 reúne matérias
+                        de futebol, basquete e Fórmula 1,
+                        além de uma edição de notícias
+                        com datas e fontes identificadas.
+                    </p>
+
+                </article>
+
+
+                <!-- CARTÃO 3: TECNOLOGIAS -->
+                <article class="informacoes__cartao">
+
+                    <h3>Tecnologias Utilizadas</h3>
+
+                    <p>
+                        HTML5 para estrutura e semântica,
+                        CSS3 para apresentação,
+                        Flexbox e Grid para layout,
+                        e JavaScript para integração
+                        com serviços externos.
+                    </p>
+
+                    <p>
+                        A classificação de pilotos
+                        é consultada através da
+                        Jolpica F1 API, utilizando
+                        fetch() e dados em JSON.
+                    </p>
+
+                </article>
+
+
+                <!-- CARTÃO 4: PROJETO ACADÊMICO -->
+                <article class="informacoes__cartao">
+
+                    <h3>Projeto Acadêmico</h3>
+
+                    <p>
+                        Desenvolvido como trabalho
+                        da disciplina de Programação
+                        Web Coding do curso de
+                        Ciências da Computação.
+                    </p>
+
+                    <p>
+                        O projeto aplica HTML semântico,
+                        metodologia BEM, responsividade,
+                        interatividade, acessibilidade
+                        e consumo de uma API externa.
+                    </p>
+
+                </article>
+
+            </div>
+            <!-- FIM DO SEGUNDO GRID -->
+
+        </section>
+
+
+        <!-- ======================================
+             SEÇÃO 3: TRANSPARÊNCIA DOS DADOS
+        ======================================= -->
+        <section class="sobre">
+
+            <h2 class="sobre__titulo">
+                Fontes e atualização
+            </h2>
+
+            <p class="sobre__descricao">
+                As matérias temáticas direcionam
+                o visitante para conteúdos publicados
+                por organizações esportivas
+                e veículos de comunicação.
+            </p>
+
+            <p class="sobre__descricao">
+                A seção Notícias do Dia apresenta
+                uma seleção editorial com data
+                identificada. Suas manchetes
+                são inseridas manualmente
+                e não são atualizadas em tempo real.
+            </p>
+
+            <p class="sobre__descricao">
+                Já o painel de classificação
+                da Fórmula 1 consulta informações
+                da Jolpica F1 API pela internet.
+                Se o serviço estiver indisponível,
+                o restante do portal continuará
+                funcionando normalmente.
+            </p>
+
+        </section>
+
+    </main>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+
+    <!-- ======================================
+         4. RODAPÉ
+    ======================================= -->
+    <footer class="rodape">
+
+        <p class="rodape__texto">
+            © 2026 ARENA 90 - Portal Esportivo
+        </p>
+
+        <p class="rodape__credito">
+            Projeto acadêmico de Web Coding
+        </p>
+
+    </footer>
+
+</body>
+</html>
