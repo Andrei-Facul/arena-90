@@ -85,6 +85,43 @@ As notícias são selecionadas manualmente e identificadas por data. Não repres
 
 As imagens utilizadas no portal devem manter os créditos e respeitar as condições de uso de suas respectivas fontes.
 
+
+## 🔧 Implementação técnica
+
+### HTML5 semântico
+As páginas utilizam elementos como header, nav,
+main, section, article e footer para organizar
+o conteúdo.
+
+### Metodologia BEM
+O CSS utiliza a metodologia BEM para organizar
+as classes em blocos, elementos e modificadores.
+
+Exemplos:
+- Bloco: .noticia
+- Elemento: .noticia__titulo
+
+### Flexbox
+Utilizado para organizar elementos de navegação,
+listas e outras áreas da interface.
+
+### CSS Grid
+Utilizado nas grades de cartões das modalidades
+esportivas e na seção de informações da página Sobre.
+
+### Media Queries
+Regras responsivas adaptam o layout para telas
+de celulares, tablets e computadores.
+
+### JavaScript e API
+O arquivo js/formula1-api.js utiliza fetch()
+para consultar os dados da Jolpica F1 API
+e exibir a classificação de pilotos.
+
+
+
+
+
 ## 🎓 Finalidade
 
 Projeto desenvolvido para fins acadêmicos e de aprendizagem em desenvolvimento web.
