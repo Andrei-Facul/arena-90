@@ -54,6 +54,25 @@ A disponibilidade das informações depende do serviço externo.
 
 O layout foi desenvolvido para diferentes tamanhos de tela, incluindo celulares, tablets e computadores.
 
+
+## 📸 Testes de responsividade
+
+O ARENA 90 foi testado em três larguras de tela,
+utilizando o modo responsivo do Google Chrome.
+
+### Computador — 1366 px
+![ARENA 90 no computador](screenshots/desktop.png)
+
+### Tablet — 768 px
+![ARENA 90 no tablet](screenshots/tablet.png)
+
+### Celular — 375 px
+![ARENA 90 no celular](screenshots/mobile.png)
+
+
+
+
+
 ## 📰 Conteúdo e fontes
 
 O portal apresenta conteúdos esportivos com referências a organizações e veículos de comunicação.
