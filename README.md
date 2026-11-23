@@ -55,19 +55,21 @@ A disponibilidade das informações depende do serviço externo.
 O layout foi desenvolvido para diferentes tamanhos de tela, incluindo celulares, tablets e computadores.
 
 
+
 ## 📸 Testes de responsividade
 
 O ARENA 90 foi testado em três larguras de tela,
 utilizando o modo responsivo do Google Chrome.
 
 ### Computador — 1366 px
-![ARENA 90 no computador](screenshots/desktop.png)
+![ARENA 90 no computador](Screenshots%20Arena%2090/desktop.png)
 
 ### Tablet — 768 px
-![ARENA 90 no tablet](screenshots/tablet.png)
+![ARENA 90 no tablet](Screenshots%20Arena%2090/tablet.png)
 
 ### Celular — 375 px
-![ARENA 90 no celular](screenshots/mobile.png)
+![ARENA 90 no celular](Screenshots%20Arena%2090/mobile.png)
+
 
 
 
