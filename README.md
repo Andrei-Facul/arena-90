@@ -73,6 +73,80 @@ utilizando o modo responsivo do Google Chrome.
 
 
 
+## 🔧 Implementação técnica
+
+### HTML5 semântico
+
+O portal utiliza elementos semânticos como
+header, nav, main, section, article e footer
+para organizar as páginas.
+
+### Metodologia BEM
+
+As classes CSS seguem a metodologia BEM:
+
+- Bloco: `.noticia`
+- Elemento: `.noticia__titulo`
+- Modificador: `.noticia--destaque`
+
+Essa organização facilita a manutenção e
+a reutilização dos estilos.
+
+### Flexbox
+
+O Flexbox foi aplicado em diferentes áreas:
+
+- `.cabecalho`: centralização do cabeçalho.
+- `.menu`: organização dos links de navegação.
+- `.modalidades__lista`: lista flexível de modalidades.
+- `.rodape`: distribuição dos textos.
+- `.classificacao__piloto`: alinhamento dos dados dos pilotos.
+
+### CSS Grid
+
+O projeto utiliza dois layouts principais:
+
+1. `.noticias__grade`: organiza os cartões
+   esportivos em até três colunas.
+
+2. `.informacoes__grade`: organiza os cartões
+   informativos da página Sobre em duas colunas.
+
+O segundo Grid também utiliza posicionamento
+explícito com `grid-column: 1 / -1`.
+
+### Media Queries
+
+A responsividade é implementada com
+três faixas principais:
+
+- Até 600 px: layout para celulares.
+- De 601 a 1024 px: layout para tablets.
+- A partir de 1025 px: layout para computadores.
+
+Também existe uma Media Query auxiliar para
+o posicionamento dos cartões informativos.
+
+O site foi testado nas larguras de
+375 px, 768 px e 1366 px.
+
+### Interatividade e acessibilidade
+
+O CSS utiliza efeitos `:hover` e `:focus-visible`
+para fornecer respostas visuais durante
+a navegação por mouse e teclado.
+
+### JavaScript e API
+
+O arquivo `js/formula1-api.js` utiliza
+JavaScript, `fetch()` e JSON para consultar
+a classificação de pilotos da temporada
+de 2026 pela Jolpica F1 API.
+
+A interface apresenta os dados recebidos
+e prevê uma mensagem quando o serviço
+não está disponível.
+
 
 
 ## 📰 Conteúdo e fontes
